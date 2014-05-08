@@ -436,6 +436,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "Helloworld-app-iOS";
 				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
@@ -454,6 +455,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "Helloworld-app-iOS";
 				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
