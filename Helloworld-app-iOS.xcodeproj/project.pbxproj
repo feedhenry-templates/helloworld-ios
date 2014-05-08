@@ -122,8 +122,8 @@
 		F2E35E87190A8BB800F08BC6 = {
 			isa = PBXGroup;
 			children = (
-				F2E35E99190A8BB800F08BC6 /* iOS-Template-App */,
-				F2E35EB2190A8BB800F08BC6 /* iOS-Template-AppTests */,
+				F2E35E99190A8BB800F08BC6 /* Helloworld-app-iOS */,
+				F2E35EB2190A8BB800F08BC6 /* Helloworld-app-iOS-AppTests */,
 				F2E35E92190A8BB800F08BC6 /* Frameworks */,
 				F2E35E91190A8BB800F08BC6 /* Products */,
 			);
@@ -156,7 +156,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F2E35E99190A8BB800F08BC6 /* iOS-Template-App */ = {
+		F2E35E99190A8BB800F08BC6 /* Helloworld-app-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				F20C6527190AA05E00FD47BD /* assets */,
@@ -166,6 +166,7 @@
 				F2E35EA5190A8BB800F08BC6 /* Images.xcassets */,
 				F2E35E9A190A8BB800F08BC6 /* Supporting Files */,
 			);
+			name = "Helloworld-app-iOS";
 			path = "iOS-Template-App";
 			sourceTree = "<group>";
 		};
@@ -180,12 +181,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F2E35EB2190A8BB800F08BC6 /* iOS-Template-AppTests */ = {
+		F2E35EB2190A8BB800F08BC6 /* Helloworld-app-iOS-AppTests */ = {
 			isa = PBXGroup;
 			children = (
 				F2E35EB8190A8BB800F08BC6 /* iOS_Template_AppTests.m */,
 				F2E35EB3190A8BB800F08BC6 /* Supporting Files */,
 			);
+			name = "Helloworld-app-iOS-AppTests";
 			path = "iOS-Template-AppTests";
 			sourceTree = "<group>";
 		};
@@ -429,13 +431,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/michaelhearne/Downloads/ios~7.0~5~iostest~src",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				PRODUCT_NAME = "Helloworld-app-iOS";
+				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -447,13 +449,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/michaelhearne/Downloads/ios~7.0~5~iostest~src",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				PRODUCT_NAME = "Helloworld-app-iOS";
+				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,7 +463,7 @@
 		F2E35EC0190A8BB800F08BC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS-Template-App.app/iOS-Template-App";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Helloworld-app-iOS.app/Helloworld-app-iOS";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -483,7 +485,7 @@
 		F2E35EC1190A8BB800F08BC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS-Template-App.app/iOS-Template-App";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Helloworld-app-iOS.app/Helloworld-app-iOS";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
