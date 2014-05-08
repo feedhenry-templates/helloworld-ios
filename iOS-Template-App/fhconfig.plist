@@ -2,14 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <dict>
   <key>host</key>
-  <string>https://testing.beta.feedhenry.com</string>
+  <string>replace me</string>
   <key>appid</key>
-  <string>uUlcwKeJaCoOU7KUdSUE5vt7</string>
+  <string>replace me</string>
   <key>projectid</key>
-  <string>uUlcwRIodukUMt8DPTZMOYlk</string>
+  <string>replace me</string>
   <key>appkey</key>
-  <string>74012ec08a9338cc634279f77cb4d3f89c4f4ec</string>
+  <string>replace me</string>
   <key>connectiontag</key>
-  <string>0.0.3</string>
+  <string>replace me</string>
 </dict>
 </plist>
