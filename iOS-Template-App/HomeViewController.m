@@ -34,17 +34,15 @@
 
 - (IBAction)cloudCall:(id)sender
 {
-    [FH performActRequest:@"hello"
-                 WithArgs:[NSDictionary dictionaryWithObjectsAndKeys:
-                           @"world", @"hello",
-                           nil]
-               AndSuccess:^(FHResponse *response) {
-                   [result setText:[response.parsedResponse objectForKey:@"msg"]];
-               }
-               AndFailure:^(FHResponse *response) {
-                   NSLog(@"cloudCall fail: %@", response.rawResponseAsString);
-               }
-     ];
+  NSDictionary* args = [NSDictionary dictionaryWithObjectsAndKeys:
+                       @"world", @"hello",
+                       nil];
+  [FH performCloudRequest:@"hello" WithMethod:@"POST" AndHeaders:nil AndArgs:args AndSuccess:^(FHResponse *response) {
+      [result setText:[response.parsedResponse objectForKey:@"msg"]];
+    } AndFailure:^(FHResponse *response) {
+       NSLog(@"cloudCall fail: %@", response.rawResponseAsString);
+     }
+  ];
 }
 
 @end
