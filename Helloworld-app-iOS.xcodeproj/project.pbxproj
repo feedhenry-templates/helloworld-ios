@@ -433,7 +433,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				PRODUCT_NAME = "Helloworld-app-iOS";
@@ -451,7 +451,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				PRODUCT_NAME = "Helloworld-app-iOS";
@@ -470,7 +470,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS-Template-App/iOS-Template-App-Prefix.pch";
+				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -492,7 +492,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS-Template-App/iOS-Template-App-Prefix.pch";
+				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-AppTests/Helloworld-app-iOSTests-Info.plist";
 				PRODUCT_NAME = "Helloworld-app-iOSTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
