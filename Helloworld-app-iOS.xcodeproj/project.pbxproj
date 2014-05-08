@@ -433,7 +433,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				PRODUCT_NAME = "Helloworld-app-iOS";
@@ -451,7 +451,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				PRODUCT_NAME = "Helloworld-app-iOS";
