@@ -7,14 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import <FH/FH.h>
-#import <FH/FHResponse.h>
 
 @interface HomeViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
-@property (weak, nonatomic) IBOutlet UILabel *result;
+@property (weak, nonatomic) IBOutlet UITextField *name;
+@property (weak, nonatomic) IBOutlet UITextView *result;
 
 - (IBAction)cloudCall:(id)sender;
 
