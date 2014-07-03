@@ -14,35 +14,26 @@
 
 @implementation HomeViewController
 
-@synthesize button;
-@synthesize result;
+@synthesize button, name, result;
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    [button setEnabled:NO];
-    
-    [FH initWithSuccess:^(FHResponse *response) {
-        [button setEnabled:YES];
-    }
-             AndFailure:^(FHResponse *response) {
-                 NSLog(@"initialize fail");
-             }];
+- (void)viewDidLoad {
+  [super viewDidLoad];
 }
 
 
-- (IBAction)cloudCall:(id)sender
-{
-  NSDictionary* args = [NSDictionary dictionaryWithObjectsAndKeys:
-                       @"world", @"hello",
-                       nil];
-  [FH performCloudRequest:@"hello" WithMethod:@"POST" AndHeaders:nil AndArgs:args AndSuccess:^(FHResponse *response) {
-      [result setText:[response.parsedResponse objectForKey:@"msg"]];
-    } AndFailure:^(FHResponse *response) {
-       NSLog(@"cloudCall fail: %@", response.rawResponseAsString);
-     }
-  ];
+- (IBAction)cloudCall:(id)sender {
+  NSDictionary *args = [NSDictionary dictionaryWithObject:name.text forKey:@"hello"];
+  FHCloudRequest *req = (FHCloudRequest *) [FH buildCloudRequest:@"/hello" WithMethod:@"POST" AndHeaders:nil AndArgs:args];
+  
+  [req execAsyncWithSuccess:^(FHResponse * res) {
+    // Response
+    NSLog(@"Response: %@", res.rawResponseAsString);
+    result.text = [res.parsedResponse objectForKey:@"msg"];
+  } AndFailure:^(FHResponse * res){
+    // Errors
+    NSLog(@"Failed to call. Response = %@", res.rawResponseAsString);
+    result.text = res.rawResponseAsString;
+  }];
 }
 
 @end
