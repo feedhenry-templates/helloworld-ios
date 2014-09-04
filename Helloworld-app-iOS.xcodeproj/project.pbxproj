@@ -26,7 +26,6 @@
 		F2E35ED1190A962500F08BC6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35ED0190A962500F08BC6 /* CFNetwork.framework */; };
 		F2E35ED3190A970A00F08BC6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35ED2190A970A00F08BC6 /* SystemConfiguration.framework */; };
 		F2E35ED5190A975C00F08BC6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35ED4190A975C00F08BC6 /* MobileCoreServices.framework */; };
-		F2E35ED7190A978800F08BC6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35ED6190A978800F08BC6 /* AdSupport.framework */; };
 		F2E35ED9190A982600F08BC6 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2E35ED8190A982600F08BC6 /* fhconfig.plist */; };
 		F2E35EDB190A9B3400F08BC6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35EDA190A9B3400F08BC6 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
@@ -66,7 +65,6 @@
 		F2E35ED0190A962500F08BC6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F2E35ED2190A970A00F08BC6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F2E35ED4190A975C00F08BC6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		F2E35ED6190A978800F08BC6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F2E35ED8190A982600F08BC6 /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fhconfig.plist; sourceTree = "<group>"; };
 		F2E35EDA190A9B3400F08BC6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -78,7 +76,6 @@
 			files = (
 				F21B7999190E5CEF00248AC3 /* FH.framework in Frameworks */,
 				F2E35EDB190A9B3400F08BC6 /* libxml2.dylib in Frameworks */,
-				F2E35ED7190A978800F08BC6 /* AdSupport.framework in Frameworks */,
 				F2E35ED5190A975C00F08BC6 /* MobileCoreServices.framework in Frameworks */,
 				F2E35ED3190A970A00F08BC6 /* SystemConfiguration.framework in Frameworks */,
 				F2E35ED1190A962500F08BC6 /* CFNetwork.framework in Frameworks */,
@@ -143,7 +140,6 @@
 			children = (
 				F21B7998190E5CEF00248AC3 /* FH.framework */,
 				F2E35EDA190A9B3400F08BC6 /* libxml2.dylib */,
-				F2E35ED6190A978800F08BC6 /* AdSupport.framework */,
 				F2E35ED4190A975C00F08BC6 /* MobileCoreServices.framework */,
 				F2E35ED2190A970A00F08BC6 /* SystemConfiguration.framework */,
 				F2E35ED0190A962500F08BC6 /* CFNetwork.framework */,
