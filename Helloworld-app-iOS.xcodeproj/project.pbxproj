@@ -7,27 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E172B3B58090DE07BA4841E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDC505C375E9780E13BA46D /* libPods.a */; };
 		F20C6529190AA1B200FD47BD /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20C6528190AA1B200FD47BD /* Storyboard.storyboard */; };
 		F20C652D190AA49900FD47BD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20C652C190AA49900FD47BD /* HomeViewController.m */; };
-		F21B7999190E5CEF00248AC3 /* FH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21B7998190E5CEF00248AC3 /* FH.framework */; };
-		F2E35E94190A8BB800F08BC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35E93190A8BB800F08BC6 /* Foundation.framework */; };
-		F2E35E96190A8BB800F08BC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35E95190A8BB800F08BC6 /* CoreGraphics.framework */; };
-		F2E35E98190A8BB800F08BC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35E97190A8BB800F08BC6 /* UIKit.framework */; };
 		F2E35E9E190A8BB800F08BC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2E35E9C190A8BB800F08BC6 /* InfoPlist.strings */; };
 		F2E35EA0190A8BB800F08BC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E35E9F190A8BB800F08BC6 /* main.m */; };
 		F2E35EA4190A8BB800F08BC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E35EA3190A8BB800F08BC6 /* AppDelegate.m */; };
 		F2E35EA6190A8BB800F08BC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E35EA5190A8BB800F08BC6 /* Images.xcassets */; };
-		F2E35EAD190A8BB800F08BC6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35EAC190A8BB800F08BC6 /* XCTest.framework */; };
-		F2E35EAE190A8BB800F08BC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35E93190A8BB800F08BC6 /* Foundation.framework */; };
-		F2E35EAF190A8BB800F08BC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35E97190A8BB800F08BC6 /* UIKit.framework */; };
 		F2E35EB7190A8BB800F08BC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2E35EB5190A8BB800F08BC6 /* InfoPlist.strings */; };
 		F2E35EB9190A8BB800F08BC6 /* iOS_Template_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E35EB8190A8BB800F08BC6 /* iOS_Template_AppTests.m */; };
-		F2E35ECF190A960F00F08BC6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35ECE190A960F00F08BC6 /* libz.dylib */; };
-		F2E35ED1190A962500F08BC6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35ED0190A962500F08BC6 /* CFNetwork.framework */; };
-		F2E35ED3190A970A00F08BC6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35ED2190A970A00F08BC6 /* SystemConfiguration.framework */; };
-		F2E35ED5190A975C00F08BC6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35ED4190A975C00F08BC6 /* MobileCoreServices.framework */; };
 		F2E35ED9190A982600F08BC6 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2E35ED8190A982600F08BC6 /* fhconfig.plist */; };
-		F2E35EDB190A9B3400F08BC6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35EDA190A9B3400F08BC6 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DDC505C375E9780E13BA46D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		98908088AD9396F3F475253B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9B05A512CB34E9C75779066C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F20C6528190AA1B200FD47BD /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 		F20C652B190AA49900FD47BD /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F20C652C190AA49900FD47BD /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		F21B7998190E5CEF00248AC3 /* FH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FH.framework; sourceTree = "<group>"; };
 		F2E35E90190A8BB800F08BC6 /* Helloworld-app-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Helloworld-app-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2E35E93190A8BB800F08BC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F2E35E95190A8BB800F08BC6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F2E35E97190A8BB800F08BC6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2E35E9B190A8BB800F08BC6 /* Helloworld-app-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Helloworld-app-iOS-Info.plist"; sourceTree = "<group>"; };
 		F2E35E9D190A8BB800F08BC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2E35E9F190A8BB800F08BC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,16 +45,10 @@
 		F2E35EA3190A8BB800F08BC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F2E35EA5190A8BB800F08BC6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F2E35EAB190A8BB800F08BC6 /* Helloworld-app-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Helloworld-app-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2E35EAC190A8BB800F08BC6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F2E35EB4190A8BB800F08BC6 /* Helloworld-app-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Helloworld-app-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		F2E35EB6190A8BB800F08BC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2E35EB8190A8BB800F08BC6 /* iOS_Template_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Template_AppTests.m; sourceTree = "<group>"; };
-		F2E35ECE190A960F00F08BC6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		F2E35ED0190A962500F08BC6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		F2E35ED2190A970A00F08BC6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F2E35ED4190A975C00F08BC6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F2E35ED8190A982600F08BC6 /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fhconfig.plist; sourceTree = "<group>"; };
-		F2E35EDA190A9B3400F08BC6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,15 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F21B7999190E5CEF00248AC3 /* FH.framework in Frameworks */,
-				F2E35EDB190A9B3400F08BC6 /* libxml2.dylib in Frameworks */,
-				F2E35ED5190A975C00F08BC6 /* MobileCoreServices.framework in Frameworks */,
-				F2E35ED3190A970A00F08BC6 /* SystemConfiguration.framework in Frameworks */,
-				F2E35ED1190A962500F08BC6 /* CFNetwork.framework in Frameworks */,
-				F2E35ECF190A960F00F08BC6 /* libz.dylib in Frameworks */,
-				F2E35E96190A8BB800F08BC6 /* CoreGraphics.framework in Frameworks */,
-				F2E35E98190A8BB800F08BC6 /* UIKit.framework in Frameworks */,
-				F2E35E94190A8BB800F08BC6 /* Foundation.framework in Frameworks */,
+				5E172B3B58090DE07BA4841E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,15 +64,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2E35EAD190A8BB800F08BC6 /* XCTest.framework in Frameworks */,
-				F2E35EAF190A8BB800F08BC6 /* UIKit.framework in Frameworks */,
-				F2E35EAE190A8BB800F08BC6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D6C9A82B06D39013F211A52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98908088AD9396F3F475253B /* Pods.debug.xcconfig */,
+				9B05A512CB34E9C75779066C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F20C6527190AA05E00FD47BD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +103,7 @@
 				F2E35EB2190A8BB800F08BC6 /* Helloworld-app-iOS-AppTests */,
 				F2E35E92190A8BB800F08BC6 /* Frameworks */,
 				F2E35E91190A8BB800F08BC6 /* Products */,
+				0D6C9A82B06D39013F211A52 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,16 +119,7 @@
 		F2E35E92190A8BB800F08BC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F21B7998190E5CEF00248AC3 /* FH.framework */,
-				F2E35EDA190A9B3400F08BC6 /* libxml2.dylib */,
-				F2E35ED4190A975C00F08BC6 /* MobileCoreServices.framework */,
-				F2E35ED2190A970A00F08BC6 /* SystemConfiguration.framework */,
-				F2E35ED0190A962500F08BC6 /* CFNetwork.framework */,
-				F2E35ECE190A960F00F08BC6 /* libz.dylib */,
-				F2E35E93190A8BB800F08BC6 /* Foundation.framework */,
-				F2E35E95190A8BB800F08BC6 /* CoreGraphics.framework */,
-				F2E35E97190A8BB800F08BC6 /* UIKit.framework */,
-				F2E35EAC190A8BB800F08BC6 /* XCTest.framework */,
+				7DDC505C375E9780E13BA46D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2E35EBC190A8BB800F08BC6 /* Build configuration list for PBXNativeTarget "Helloworld-app-iOS" */;
 			buildPhases = (
+				6DFD269AB71434FE4A61548D /* Check Pods Manifest.lock */,
 				F2E35E8C190A8BB800F08BC6 /* Sources */,
 				F2E35E8D190A8BB800F08BC6 /* Frameworks */,
 				F2E35E8E190A8BB800F08BC6 /* Resources */,
+				CB8CF3FC9E963585471EEC9D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,6 +271,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DFD269AB71434FE4A61548D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB8CF3FC9E963585471EEC9D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2E35E8C190A8BB800F08BC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -378,9 +385,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "${inehrited}";
+				"OTHER_LDFLAGS[arch=*]" = "${inehrited}";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -412,8 +420,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "${inehrited}";
+				"OTHER_LDFLAGS[arch=*]" = "${inehrited}";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -422,6 +431,7 @@
 		};
 		F2E35EBD190A8BB800F08BC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98908088AD9396F3F475253B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -432,7 +442,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "Helloworld-app-iOS";
 				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
@@ -441,6 +451,7 @@
 		};
 		F2E35EBE190A8BB800F08BC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B05A512CB34E9C75779066C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -451,7 +462,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "Helloworld-app-iOS";
 				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
