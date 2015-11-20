@@ -249,7 +249,7 @@
 		F2E35E88190A8BB800F08BC6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = FeedHenry;
 				TargetAttributes = {
 					F2E35EAA190A8BB800F08BC6 = {
@@ -364,6 +364,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -433,6 +434,7 @@
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Helloworld-app-iOS";
 				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
@@ -452,6 +454,7 @@
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Helloworld-app-iOS";
 				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
@@ -474,6 +477,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "iOS-Template-AppTests/Helloworld-app-iOSTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Helloworld-app-iOSTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -492,6 +496,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-AppTests/Helloworld-app-iOSTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Helloworld-app-iOSTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
