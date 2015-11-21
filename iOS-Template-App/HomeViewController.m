@@ -26,29 +26,31 @@
 @synthesize button, name, result;
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
+    result.contentInset = UIEdgeInsetsMake(20.0, 20.0, 10.0, 10.0);
+    [super viewDidLoad];
+    [FH initWithSuccess:^(FHResponse *response) {
+        NSLog(@"initialized OK");
+        button.hidden = NO;
+    } AndFailure:^(FHResponse *response) {
+        NSLog(@"initialize fail, %@", response.rawResponseAsString);
+        button.hidden = YES;
+        result.text = @"Please fill in fhconfig.plist file.";
+    }];
 }
 
 
-- (IBAction)cloudCall:(id)sender {
-    [FH initWithSuccess:^(FHResponse *response) {
-        NSLog(@"initialized OK");
-        
-        NSDictionary *args = [NSDictionary dictionaryWithObject:name.text forKey:@"hello"];
-        FHCloudRequest *req = (FHCloudRequest *) [FH buildCloudRequest:@"/hello" WithMethod:@"POST" AndHeaders:nil AndArgs:args];
-        
-        [req execAsyncWithSuccess:^(FHResponse * res) {
-            // Response
-            NSLog(@"Response: %@", res.rawResponseAsString);
-            result.text = [res.parsedResponse objectForKey:@"msg"];
-        } AndFailure:^(FHResponse * res){
-            // Errors
-            NSLog(@"Failed to call. Response = %@", res.rawResponseAsString);
-            result.text = res.rawResponseAsString;
-        }];
-        
-    } AndFailure:^(FHResponse *response) {
-        NSLog(@"initialize fail, %@", response.rawResponseAsString);
+- (IBAction)cloudCall:(id)sender {    
+    NSDictionary *args = [NSDictionary dictionaryWithObject:name.text forKey:@"hello"];
+    FHCloudRequest *req = (FHCloudRequest *) [FH buildCloudRequest:@"/hello" WithMethod:@"POST" AndHeaders:nil AndArgs:args];
+    
+    [req execAsyncWithSuccess:^(FHResponse * res) {
+        // Response
+        NSLog(@"Response: %@", res.rawResponseAsString);
+        result.text = [res.parsedResponse objectForKey:@"msg"];
+    } AndFailure:^(FHResponse * res){
+        // Errors
+        NSLog(@"Failed to call. Response = %@", res.rawResponseAsString);
+        result.text = res.rawResponseAsString;
     }];
 }
 
