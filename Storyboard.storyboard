@@ -21,8 +21,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Un-jK-Rq2" userLabel="HelloWorldView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euP-8r-Tra">
-                                        <rect key="frame" x="217" y="103" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euP-8r-Tra">
+                                        <rect key="frame" x="8" y="252" width="584" height="30"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.0" green="0.23364180530000001" blue="0.49113343250000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -31,22 +31,12 @@
                                         <state key="normal" title="Call">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="307-2m-nUy"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="307-2m-nUy"/>
-                                            </mask>
-                                        </variation>
                                         <connections>
                                             <action selector="cloudCall:" destination="1cA-hw-Lzo" eventType="touchUpInside" id="C78-ev-ZOx"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Say hello to the cloud!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lld-ac-jUm">
-                                        <rect key="frame" x="156" y="46" width="262" height="15"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say hello to the cloud!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lld-ac-jUm">
+                                        <rect key="frame" x="8" y="106" width="584" height="24"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -55,8 +45,8 @@
                                             <rect key="frame" x="8" y="90" width="384" height="24"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pQ0-ss-Ces">
-                                        <rect key="frame" x="148" y="6" width="219" height="55"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pQ0-ss-Ces">
+                                        <rect key="frame" x="8" y="36" width="584" height="71"/>
                                         <animations/>
                                         <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
@@ -66,8 +56,8 @@
                                             <rect key="frame" x="8" y="36" width="384" height="55"/>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="World" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Kj-tb-HtK">
-                                        <rect key="frame" x="186" y="78" width="42" height="17"/>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="World" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Kj-tb-HtK">
+                                        <rect key="frame" x="8" y="190" width="584" height="47"/>
                                         <animations/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -76,16 +66,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Ieh-U5-sq9"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="Ieh-U5-sq9"/>
-                                            </mask>
-                                        </variation>
                                     </textField>
                                 </subviews>
                                 <animations/>
@@ -107,56 +87,6 @@
                                     <constraint firstAttribute="trailing" secondItem="1Kj-tb-HtK" secondAttribute="trailing" constant="8" id="vnj-da-dyC"/>
                                     <constraint firstItem="euP-8r-Tra" firstAttribute="leading" secondItem="2Un-jK-Rq2" secondAttribute="leading" constant="8" id="xzk-jx-dWW"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="euP-8r-Tra"/>
-                                        <exclude reference="Lld-ac-jUm"/>
-                                        <exclude reference="pQ0-ss-Ces"/>
-                                        <exclude reference="1Kj-tb-HtK"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="pBe-0I-xbD"/>
-                                        <exclude reference="rao-W9-kW8"/>
-                                        <exclude reference="v38-ID-ueY"/>
-                                        <exclude reference="BgN-ST-bcV"/>
-                                        <exclude reference="bfJ-Sd-iJD"/>
-                                        <exclude reference="cf8-HG-bUe"/>
-                                        <exclude reference="ecD-Bm-hu0"/>
-                                        <exclude reference="GxS-ob-Ehr"/>
-                                        <exclude reference="Y4O-4h-XZ4"/>
-                                        <exclude reference="vnj-da-dyC"/>
-                                        <exclude reference="0D5-dR-you"/>
-                                        <exclude reference="1du-hT-2u1"/>
-                                        <exclude reference="ekW-JD-I8b"/>
-                                        <exclude reference="flH-rV-Dso"/>
-                                        <exclude reference="xzk-jx-dWW"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="euP-8r-Tra"/>
-                                        <include reference="Lld-ac-jUm"/>
-                                        <include reference="pQ0-ss-Ces"/>
-                                        <include reference="1Kj-tb-HtK"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="pBe-0I-xbD"/>
-                                        <include reference="rao-W9-kW8"/>
-                                        <include reference="v38-ID-ueY"/>
-                                        <include reference="BgN-ST-bcV"/>
-                                        <include reference="bfJ-Sd-iJD"/>
-                                        <include reference="cf8-HG-bUe"/>
-                                        <include reference="ecD-Bm-hu0"/>
-                                        <include reference="GxS-ob-Ehr"/>
-                                        <include reference="Y4O-4h-XZ4"/>
-                                        <include reference="vnj-da-dyC"/>
-                                        <include reference="0D5-dR-you"/>
-                                        <include reference="1du-hT-2u1"/>
-                                        <include reference="ekW-JD-I8b"/>
-                                        <include reference="flH-rV-Dso"/>
-                                        <include reference="xzk-jx-dWW"/>
-                                    </mask>
-                                </variation>
                             </view>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="scaleToFill" text="Response here." translatesAutoresizingMaskIntoConstraints="NO" id="5cB-VR-dcX">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
