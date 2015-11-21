@@ -52,4 +52,10 @@
     }];
 }
 
+// Mark - Dismiss keyboard
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [result endEditing:YES];
+    [name endEditing:YES];
+}
+
 @end
