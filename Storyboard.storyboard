@@ -18,6 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="scaleToFill" text="Response here." translatesAutoresizingMaskIntoConstraints="NO" id="5cB-VR-dcX">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.233641805333173" blue="0.49113343253968256" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.98823535439999999" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Un-jK-Rq2" userLabel="HelloWorldView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <subviews>
@@ -88,27 +96,56 @@
                                     <constraint firstItem="euP-8r-Tra" firstAttribute="leading" secondItem="2Un-jK-Rq2" secondAttribute="leading" constant="8" id="xzk-jx-dWW"/>
                                 </constraints>
                             </view>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="scaleToFill" text="Response here." translatesAutoresizingMaskIntoConstraints="NO" id="5cB-VR-dcX">
-                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.233641805333173" blue="0.49113343253968256" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="0.98823535439999999" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.60392159219999997" green="0.78039222959999999" blue="0.90588241820000004" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="pc3-P4-lEh" firstAttribute="top" secondItem="5cB-VR-dcX" secondAttribute="bottom" id="Dit-kV-eKJ"/>
+                            <constraint firstItem="5cB-VR-dcX" firstAttribute="leading" secondItem="2Un-jK-Rq2" secondAttribute="trailing" id="IfQ-sN-NfA"/>
                             <constraint firstItem="2Un-jK-Rq2" firstAttribute="centerX" secondItem="aLq-wC-jsg" secondAttribute="centerX" id="JBt-1z-JXS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5cB-VR-dcX" secondAttribute="trailing" constant="-20" id="OR0-mD-UKw"/>
+                            <constraint firstItem="5cB-VR-dcX" firstAttribute="top" secondItem="ijn-Ly-QGs" secondAttribute="bottom" constant="-20" id="UMT-WK-a4Y"/>
                             <constraint firstItem="5cB-VR-dcX" firstAttribute="top" secondItem="2Un-jK-Rq2" secondAttribute="bottom" id="bYV-xj-f8i"/>
+                            <constraint firstItem="2Un-jK-Rq2" firstAttribute="leading" secondItem="aLq-wC-jsg" secondAttribute="leadingMargin" constant="-20" id="dq2-oC-EJR"/>
                             <constraint firstItem="2Un-jK-Rq2" firstAttribute="top" secondItem="aLq-wC-jsg" secondAttribute="top" id="fOY-GT-XsG"/>
+                            <constraint firstItem="2Un-jK-Rq2" firstAttribute="top" secondItem="ijn-Ly-QGs" secondAttribute="bottom" constant="-20" id="gLs-jL-vrA"/>
                             <constraint firstItem="5cB-VR-dcX" firstAttribute="height" secondItem="2Un-jK-Rq2" secondAttribute="height" id="ics-Uq-ede"/>
                             <constraint firstItem="5cB-VR-dcX" firstAttribute="leading" secondItem="aLq-wC-jsg" secondAttribute="leadingMargin" constant="-20" id="lAb-EN-qev"/>
+                            <constraint firstItem="pc3-P4-lEh" firstAttribute="top" secondItem="2Un-jK-Rq2" secondAttribute="bottom" id="rp8-2U-nPx"/>
+                            <constraint firstItem="pc3-P4-lEh" firstAttribute="top" secondItem="5cB-VR-dcX" secondAttribute="bottom" id="rpN-IO-5ya"/>
                             <constraint firstItem="2Un-jK-Rq2" firstAttribute="leading" secondItem="5cB-VR-dcX" secondAttribute="leading" id="s5m-3e-Q3q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5cB-VR-dcX" secondAttribute="trailing" constant="-20" id="zMA-ii-ICh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dq2-oC-EJR"/>
+                                <exclude reference="gLs-jL-vrA"/>
+                                <exclude reference="IfQ-sN-NfA"/>
+                                <exclude reference="UMT-WK-a4Y"/>
+                                <exclude reference="zMA-ii-ICh"/>
+                                <exclude reference="rp8-2U-nPx"/>
+                                <exclude reference="rpN-IO-5ya"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="JBt-1z-JXS"/>
+                                <include reference="dq2-oC-EJR"/>
+                                <exclude reference="fOY-GT-XsG"/>
+                                <include reference="gLs-jL-vrA"/>
+                                <exclude reference="s5m-3e-Q3q"/>
+                                <include reference="IfQ-sN-NfA"/>
+                                <exclude reference="OR0-mD-UKw"/>
+                                <include reference="UMT-WK-a4Y"/>
+                                <exclude reference="bYV-xj-f8i"/>
+                                <exclude reference="ics-Uq-ede"/>
+                                <exclude reference="lAb-EN-qev"/>
+                                <include reference="zMA-ii-ICh"/>
+                                <exclude reference="Dit-kV-eKJ"/>
+                                <include reference="rp8-2U-nPx"/>
+                                <include reference="rpN-IO-5ya"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="button" destination="euP-8r-Tra" id="x19-m2-PUZ"/>
@@ -118,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hr-p4-apb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615" y="295"/>
+            <point key="canvasLocation" x="615" y="294"/>
         </scene>
     </scenes>
 </document>
