@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="scaleToFill" text="Response here." translatesAutoresizingMaskIntoConstraints="NO" id="5cB-VR-dcX">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="scaleToFill" editable="NO" text="Response here." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cB-VR-dcX">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.233641805333173" blue="0.49113343253968256" alpha="1" colorSpace="calibratedRGB"/>

@@ -28,6 +28,8 @@
 - (void)viewDidLoad {
     result.contentInset = UIEdgeInsetsMake(20.0, 20.0, 10.0, 10.0);
     [super viewDidLoad];
+    
+    // Initialized cloud connection
     [FH initWithSuccess:^(FHResponse *response) {
         NSLog(@"initialized OK");
         button.hidden = NO;
@@ -39,7 +41,8 @@
 }
 
 
-- (IBAction)cloudCall:(id)sender {    
+- (IBAction)cloudCall:(id)sender {
+    [name endEditing:YES];
     NSDictionary *args = [NSDictionary dictionaryWithObject:name.text forKey:@"hello"];
     FHCloudRequest *req = (FHCloudRequest *) [FH buildCloudRequest:@"/hello" WithMethod:@"POST" AndHeaders:nil AndArgs:args];
     
@@ -56,7 +59,6 @@
 
 // Mark - Dismiss keyboard
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [result endEditing:YES];
     [name endEditing:YES];
 }
 
