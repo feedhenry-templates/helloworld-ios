@@ -102,18 +102,8 @@
 		F20C6527190AA05E00FD47BD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F2E35ED8190A982600F08BC6 /* fhconfig.plist */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		F20C652A190AA42300FD47BD /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				F20C652B190AA49900FD47BD /* HomeViewController.h */,
-				F20C652C190AA49900FD47BD /* HomeViewController.m */,
-			);
-			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		F2E35E87190A8BB800F08BC6 = {
@@ -155,11 +145,11 @@
 		F2E35E99190A8BB800F08BC6 /* Helloworld-app-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F20C6527190AA05E00FD47BD /* Assets */,
-				F2E35EC2190A8C0200F08BC6 /* UI */,
+				F20C652B190AA49900FD47BD /* HomeViewController.h */,
+				F20C652C190AA49900FD47BD /* HomeViewController.m */,
+				F20C6528190AA1B200FD47BD /* Storyboard.storyboard */,
 				F2E35EA2190A8BB800F08BC6 /* AppDelegate.h */,
 				F2E35EA3190A8BB800F08BC6 /* AppDelegate.m */,
-				F2E35EA5190A8BB800F08BC6 /* Images.xcassets */,
 				F2E35E9A190A8BB800F08BC6 /* Supporting Files */,
 			);
 			name = "Helloworld-app-iOS";
@@ -169,6 +159,9 @@
 		F2E35E9A190A8BB800F08BC6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F2E35EA5190A8BB800F08BC6 /* Images.xcassets */,
+				F20C6527190AA05E00FD47BD /* Assets */,
+				F2E35ED8190A982600F08BC6 /* fhconfig.plist */,
 				F2E35E9B190A8BB800F08BC6 /* Helloworld-app-iOS-Info.plist */,
 				F2E35E9C190A8BB800F08BC6 /* InfoPlist.strings */,
 				F2E35E9F190A8BB800F08BC6 /* main.m */,
@@ -194,15 +187,6 @@
 				F2E35EB5190A8BB800F08BC6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F2E35EC2190A8C0200F08BC6 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				F20C652A190AA42300FD47BD /* ViewControllers */,
-				F20C6528190AA1B200FD47BD /* Storyboard.storyboard */,
-			);
-			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +233,7 @@
 		F2E35E88190A8BB800F08BC6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = FeedHenry;
 				TargetAttributes = {
 					F2E35EAA190A8BB800F08BC6 = {
@@ -364,6 +348,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -404,6 +390,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -433,6 +420,7 @@
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Helloworld-app-iOS";
 				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
@@ -452,6 +440,7 @@
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Helloworld-app-iOS";
 				SHARED_PRECOMPS_DIR = "";
 				WRAPPER_EXTENSION = app;
@@ -474,6 +463,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "iOS-Template-AppTests/Helloworld-app-iOSTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Helloworld-app-iOSTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -492,6 +482,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Template-App/Helloworld-app-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Template-AppTests/Helloworld-app-iOSTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Helloworld-app-iOSTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

@@ -9,7 +9,7 @@
 #import "FHSyncConfig.h"
 #import "FHSyncNotificationMessage.h"
 #import "FHSyncDelegate.h"
-
+#import "FHSyncDataset.h"
 /**
  The sync client is part of the FeedHenry data sync framework. It provides a mechanism to manage
  bi-direction data synchronization.
@@ -20,12 +20,17 @@
 /** Get the singleton instance of the sync client */
 + (FHSyncClient *)getInstance;
 
-/** Initialize the sync client with the sync configuration
+/** Initializer for unit testing only.
 
  @param config The sync configuration
  */
-- (instancetype)initWithConfig:(FHSyncConfig *)config;
+- (instancetype)initWithConfig:(FHSyncConfig *)config AndDataSet:(FHSyncDataset*)dataSetInjected;
 
+/** Initialize the sync client with the sync configuration
+ 
+ @param config The sync configuration
+ */
+- (instancetype)initWithConfig:(FHSyncConfig *)config;
 /**
  Use sync client to manage a dataset with id dataId.
 
@@ -36,6 +41,19 @@
 - (void)manageWithDataId:(NSString *)dataId
                AndConfig:(FHSyncConfig *)config
                 AndQuery:(NSDictionary *)queryParams;
+
+/**
+ Use sync client to manage a dataset with id dataId.
+ 
+ @param dataId the id of the data set
+ @param config the sync configuration for this data set
+ @param queryParams the query params for the data set
+ @param metaData the meta data for the data set
+ */
+- (void)manageWithDataId:(NSString *)dataId
+               AndConfig:(FHSyncConfig *)config
+                AndQuery:(NSDictionary *)queryParams
+             AndMetaData:(NSMutableDictionary *)metaData;
 
 /**
  Read a data record with id uid within data set with id dataId
