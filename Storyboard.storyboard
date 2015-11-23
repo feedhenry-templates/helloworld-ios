@@ -9,7 +9,7 @@
         <!--Home View Controller-->
         <scene sceneID="eEO-c2-sVR">
             <objects>
-                <viewController id="1cA-hw-Lzo" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="1cA-hw-Lzo" customClass="HomeViewController" customModule="Helloworld_app_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ijn-Ly-QGs"/>
                         <viewControllerLayoutGuide type="bottom" id="pc3-P4-lEh"/>
@@ -40,7 +40,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="cloudCall:" destination="1cA-hw-Lzo" eventType="touchUpInside" id="C78-ev-ZOx"/>
+                                            <action selector="cloudCall:" destination="1cA-hw-Lzo" eventType="touchUpInside" id="GMw-pe-rHa"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say hello to the cloud!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lld-ac-jUm">
@@ -148,9 +148,9 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="button" destination="euP-8r-Tra" id="x19-m2-PUZ"/>
-                        <outlet property="name" destination="1Kj-tb-HtK" id="Hay-iy-3wZ"/>
-                        <outlet property="result" destination="5cB-VR-dcX" id="soc-iC-d6o"/>
+                        <outlet property="button" destination="euP-8r-Tra" id="8dN-hG-qVk"/>
+                        <outlet property="name" destination="1Kj-tb-HtK" id="Kqp-ud-hxm"/>
+                        <outlet property="result" destination="5cB-VR-dcX" id="1af-r3-LaA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hr-p4-apb" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -29,14 +29,14 @@ class HomeViewController: UIViewController {
         
         // Initialized cloud connection
         let successCallback:(AnyObject!) -> Void = {response in
-            print("initialized OK")
-            self.button.hidden = false
+            //print("initialized OK")
+            //self.button.hidden = false
         }
         let errorCallback: (AnyObject!) -> Void = {response in
-            if let response = response as? FHResponse {
-                print("FH init failed. Error = \(response.rawResponseAsString)")
-                self.result.text = "Please fill in fhconfig.plist file."
-            }
+//            if let response = response as? FHResponse {
+//                print("FH init failed. Error = \(response.rawResponseAsString)")
+//                self.result.text = "Please fill in fhconfig.plist file."
+//            }
         }
         FH.initWithSuccess(successCallback, andFailure: errorCallback)
         
