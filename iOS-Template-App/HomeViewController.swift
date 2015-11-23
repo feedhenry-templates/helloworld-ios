@@ -39,7 +39,6 @@ class HomeViewController: UIViewController {
             }
         }
         FH.initWithSuccess(successCallback, andFailure: errorCallback)
-        
     }
     
     

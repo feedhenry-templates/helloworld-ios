@@ -1,8 +1,10 @@
 # helloworld-ios-app 
 
-> Swift version of HelloWorld app is available [here](https://github.com/feedhenry-templates/hello-ios-swift).
+> Objectice-c version of HelloWorld app is available in [master branch](https://github.com/feedhenry-templates/helloworld-ios).
 
 ```helloworld-ios-app``` is a simple app to test your remote cloud connection. Its server side companion app: [HelloWorld Cloud App](https://github.com/feedhenry-templates/helloworld-cloud). This template app demos how to intialize a cloud call and make calls to cloud endpoints. The app uses [fh-ios-sdk](https://github.com/feedhenry/fh-ios-sdk). 
+
+100% Swift app.
 
 |                 | Project Info  |
 | --------------- | ------------- |
@@ -22,15 +24,23 @@
 
 ### Init
 
-In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
+In ```iOS-Template-App/HomeViewController.swift``` the FH.init call is done:
 ```
 - (void)viewDidLoad {  
-    // Initialized cloud connection
-    [FH initWithSuccess:^(FHResponse *response) { // [1] 
-        // Do you other calls to the cloud.       // [2]
-    } AndFailure:^(FHResponse *response) {
-        // Log an error                           // [3]
-    }];
+    override func viewDidLoad() {
+        // Initialized cloud connection
+        let successCallback:(AnyObject!) -> Void = {response in // [2]
+            print("initialized OK")
+            self.button.hidden = false
+        }
+        let errorCallback: (AnyObject!) -> Void = {response in  // [3]
+            if let response = response as? FHResponse {
+                print("FH init failed. Error = \(response.rawResponseAsString)")
+                self.result.text = "Please fill in fhconfig.plist file."
+            }
+        }
+        FH.initWithSuccess(successCallback, andFailure: errorCallback)  // [1]
+    }
 }
 
 ```
@@ -44,16 +54,25 @@ In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
 
 In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
 ```
-- (IBAction)cloudCall:(id)sender {
-    NSDictionary *args = [NSDictionary dictionaryWithObject:name.text forKey:@"hello"];
-    FHCloudRequest *req = (FHCloudRequest *) [FH buildCloudRequest:@"/hello" WithMethod:@"POST" AndHeaders:nil AndArgs:args];      // [1]  
-    [req execAsyncWithSuccess:^(FHResponse * res) {       // [2]
-        // Response
-    } AndFailure:^(FHResponse * res){
-        // Errors
-    }];
-}
+@IBAction func cloudCall(sender: AnyObject) {
+    let args = ["hello": name.text ?? "world"]    // [1]
+    let successCallback:(AnyObject!) -> Void = {response in
+         if let response = response as? FHResponse {
+            if let parsedRes = response.parsedResponse as? [String:String] {
+                self.result.text = parsedRes["msg"]
+            }
+        }
+    }
+    let errorCallback: (AnyObject!) -> Void = {response in
+        if let response = response as? FHResponse {
+            print("initialize fail, \(response.rawResponseAsString)")
+            self.button.hidden = true
+        }
+    }
+    FH.performCloudRequest("hello", withMethod: "POST", 
+       andHeaders: nil, andArgs: args, andSuccess: successCallback, andFailure: errorCallback)  // [2]
+    }
 ```
-[1] Create a cloud request specifying endpoint and its arguments.
+[1] Create a dictionary of arguments.
 
-[2] Make asynchronous call with its success and error callbacks.
+[2] Make asynchronous call to cloud endpoint with its success and error callbacks.
