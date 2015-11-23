@@ -29,14 +29,14 @@ class HomeViewController: UIViewController {
         
         // Initialized cloud connection
         let successCallback:(AnyObject!) -> Void = {response in
-            //print("initialized OK")
-            //self.button.hidden = false
+            print("initialized OK")
+            self.button.hidden = false
         }
         let errorCallback: (AnyObject!) -> Void = {response in
-//            if let response = response as? FHResponse {
-//                print("FH init failed. Error = \(response.rawResponseAsString)")
-//                self.result.text = "Please fill in fhconfig.plist file."
-//            }
+            if let response = response as? FHResponse {
+                print("FH init failed. Error = \(response.rawResponseAsString)")
+                self.result.text = "Please fill in fhconfig.plist file."
+            }
         }
         FH.initWithSuccess(successCallback, andFailure: errorCallback)
         
@@ -46,7 +46,7 @@ class HomeViewController: UIViewController {
     @IBAction func cloudCall(sender: AnyObject) {
         name.endEditing(true)
         
-        let args = ["hello":"world"]
+        let args = ["hello": name.text ?? "world"]
         let successCallback:(AnyObject!) -> Void = {response in
             if let response = response as? FHResponse {
                 if let parsedRes = response.parsedResponse as? [String:String] {
@@ -64,8 +64,11 @@ class HomeViewController: UIViewController {
     }
     
     // Mark - Dismiss keyboard
-//    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-//        name.endEditing(true)
-//    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if let _ = touches.first {
+            name.endEditing(true)
+        }
+        super.touchesBegan(touches, withEvent:event)
+    }
 
 }

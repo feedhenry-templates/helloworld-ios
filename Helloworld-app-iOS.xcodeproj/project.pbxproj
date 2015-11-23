@@ -68,16 +68,8 @@
 		48ED7C2E1C03192D000A368F = {
 			isa = PBXGroup;
 			children = (
-				48ED7C6A1C031CCB000A368F /* Foundation.framework */,
-				48ED7C681C031CC0000A368F /* UIKit.framework */,
-				48ED7C661C031CB8000A368F /* CoreGraphics.framework */,
-				48ED7C641C031CAC000A368F /* MobileCoreServices.framework */,
-				48ED7C621C031CA5000A368F /* SystemConfiguration.framework */,
-				48ED7C601C031C3C000A368F /* CFNetwork.framework */,
-				48ED7C5A1C031A3D000A368F /* FH.framework */,
-				48ED7C5E1C031AD8000A368F /* libz.tbd */,
-				48ED7C5C1C031AD2000A368F /* libxml2.tbd */,
 				48ED7C391C03192D000A368F /* Helloworld-app-iOS */,
+				48ED7C701C0322CE000A368F /* Frameworks */,
 				48ED7C381C03192D000A368F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +94,22 @@
 				48ED7C541C0319E8000A368F /* fhconfig.plist */,
 			);
 			path = "Helloworld-app-iOS";
+			sourceTree = "<group>";
+		};
+		48ED7C701C0322CE000A368F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48ED7C6A1C031CCB000A368F /* Foundation.framework */,
+				48ED7C681C031CC0000A368F /* UIKit.framework */,
+				48ED7C661C031CB8000A368F /* CoreGraphics.framework */,
+				48ED7C641C031CAC000A368F /* MobileCoreServices.framework */,
+				48ED7C621C031CA5000A368F /* SystemConfiguration.framework */,
+				48ED7C601C031C3C000A368F /* CFNetwork.framework */,
+				48ED7C5A1C031A3D000A368F /* FH.framework */,
+				48ED7C5E1C031AD8000A368F /* libz.tbd */,
+				48ED7C5C1C031AD2000A368F /* libxml2.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +287,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.feedhenry.Helloworld-app-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -295,6 +304,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/iOS-Template-App/Helloworld-app-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.feedhenry.Helloworld-app-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

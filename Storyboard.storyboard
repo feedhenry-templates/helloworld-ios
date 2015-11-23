@@ -29,7 +29,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Un-jK-Rq2" userLabel="HelloWorldView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euP-8r-Tra">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euP-8r-Tra">
                                         <rect key="frame" x="8" y="252" width="584" height="30"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.0" green="0.23364180530000001" blue="0.49113343250000002" alpha="1" colorSpace="calibratedRGB"/>
