@@ -57,3 +57,17 @@ In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
 [1] Create a cloud request specifying endpoint and its arguments.
 
 [2] Make asynchronous call with its success and error callbacks.
+
+### iOS9 and non TLS1.2 backend
+
+If your RHMAP is depoyed without TLS1.2 support, open as source  ```blank-ios-app/blank-ios-app-Info.plist.plist``` uncomment the exception lines:
+
+```
+  <!--
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+  </dict>
+   -->
+```
