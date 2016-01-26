@@ -12,7 +12,6 @@
 		48321E6A1C4950610061A8FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48321E691C4950610061A8FB /* AppDelegate.m */; };
 		48321E6C1C49507C0061A8FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48321E6B1C49507C0061A8FB /* Images.xcassets */; };
 		48321E6E1C4950890061A8FB /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48321E6D1C4950890061A8FB /* fhconfig.plist */; };
-		48321E701C4950980061A8FB /* helloworld-ios-app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48321E6F1C4950980061A8FB /* helloworld-ios-app-Info.plist */; };
 		48321E721C4950A00061A8FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48321E711C4950A00061A8FB /* main.m */; };
 		F21B7999190E5CEF00248AC3 /* FH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21B7998190E5CEF00248AC3 /* FH.framework */; };
 		F2E35E94190A8BB800F08BC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35E93190A8BB800F08BC6 /* Foundation.framework */; };
@@ -188,7 +187,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48321E701C4950980061A8FB /* helloworld-ios-app-Info.plist in Resources */,
 				48321E6E1C4950890061A8FB /* fhconfig.plist in Resources */,
 				48321E6C1C49507C0061A8FB /* Images.xcassets in Resources */,
 				48321E671C4950510061A8FB /* Storyboard.storyboard in Resources */,
@@ -229,6 +227,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
