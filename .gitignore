@@ -24,3 +24,8 @@ build
 node_modules
 **/*.xcuserdatad/**
 **/*.xcworkspace/**
+
+Pods/
+Podfile.lock
+*.xcworkspace
+xcuserdata
