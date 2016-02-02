@@ -1,0 +1,16 @@
+language: objective-c
+osx_image: xcode7
+xcode_workspace: helloworld-ios-app.xcworkspace
+xcode_scheme: helloworld-ios-app
+xcode_sdk: iphonesimulator
+
+before_install:
+    - gem install cocoapods -N --no-rdoc --no-ri --no-document --quiet
+
+notifications:
+  irc: "irc.freenode.org#feedhenry"
+
+branches:
+  only:
+    - master
+    - cocoapods
