@@ -340,6 +340,8 @@
 				GCC_PREFIX_HEADER = "helloworld-ios-app/helloworld-ios-app-Prefix.pch";
 				INFOPLIST_FILE = "helloworld-ios-app/helloworld-ios-app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "helloworld-ios-app";
 				SHARED_PRECOMPS_DIR = "";
@@ -361,6 +363,7 @@
 				GCC_PREFIX_HEADER = "helloworld-ios-app/helloworld-ios-app-Prefix.pch";
 				INFOPLIST_FILE = "helloworld-ios-app/helloworld-ios-app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feedhenry.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "helloworld-ios-app";
 				SHARED_PRECOMPS_DIR = "";
