@@ -1,4 +1,4 @@
-# helloworld-ios-app 
+# helloworld-ios-app [![Build Status](https://travis-ci.org/feedhenry-templates/helloworld-ios.png)](https://travis-ci.org/feedhenry-templates/helloword-ios)
 
 > Swift version of HelloWorld app is available [here](https://github.com/feedhenry-templates/helloworld-ios/tree/swift).
 
