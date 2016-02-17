@@ -1,26 +1,45 @@
 # helloworld-ios-app 
 
-> Objectice-c version of HelloWorld app is available in [master branch](https://github.com/feedhenry-templates/helloworld-ios).
+> Objective-c version of HelloWorld app is available in [master branch](https://github.com/feedhenry-templates/helloworld-ios).
 
-```helloworld-ios-app``` is a simple app to test your remote cloud connection. Its server side companion app: [HelloWorld Cloud App](https://github.com/feedhenry-templates/helloworld-cloud). This template app demos how to intialize a cloud call and make calls to cloud endpoints. The app uses [fh-ios-sdk](https://github.com/feedhenry/fh-ios-sdk). 
+Author: Corinne Krych   
+Level: Intermediate  
+Technologies: Swift, iOS, RHMAP, CocoaPods.
+Summary: A demonstration of how to get started with remote cloud call in RHMAP.
+Community Project : [Feed Henry](http://feedhenry.org)
+Target Product: RHMAP  
+Product Versions: RHMAP 3.7.0+   
+Source: https://github.com/feedhenry-templates/helloworld-ios  
+Prerequisites: fh-ios-sdk : 3.+, Xcode : 7.2+, iOS SDK : iOS7+, CocoaPods  0.39+
 
-100% Swift app.
+## What is it?
 
-|                 | Project Info  |
-| --------------- | ------------- |
-| License:        | Apache License, Version 2.0  |
-| Build:          | Embedded FH.framework  |
-| Documentation:  | http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html|
+Simple native iOS app to test your remote cloud connection in RHMAP. Its server side companion app: [HelloWorld Cloud App](https://github.com/feedhenry-templates/helloworld-cloud). This template app demos how to intialize a cloud call and make calls to cloud endpoints. The app uses [fh-ios-sdk](https://github.com/feedhenry/fh-ios-sdk).
 
-### Build
+If you do not have access to a RHMAP instance, you can sign up for a free instance at [https://openshift.feedhenry.com/](https://openshift.feedhenry.com/).
+
+## How do I run it?  
+
+### RHMAP Studio
+
+This application and its cloud services are available as a project template in RHMAP as part of the "Native iOS Hello World Project" template.
+
+### Local Clone (ideal for Open Source Development)
+If you wish to contribute to this template, the following information may be helpful; otherwise, RHMAP and its build facilities are the preferred solution.
+
+## Build instructions
 
 1. Clone this project
 
 2. Populate ```iOS-Template-App/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
 
-3. open Helloworld-app-iOS.xcodeproj
+3. Run ```pod install``` 
 
-## Example Usage
+4. Open Helloworld-app-iOS.xcworkspace
+
+5. Run the project
+ 
+## How does it work?
 
 ### Init
 
@@ -90,4 +109,3 @@ If your RHMAP is depoyed without TLS1.2 support, open as source  ```blank-ios-ap
   </dict>
    -->
 ```
-
