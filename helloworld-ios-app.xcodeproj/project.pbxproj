@@ -13,7 +13,6 @@
 		4845C3831C49579D002F80E5 /* helloworld-ios-app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4845C3821C49579D002F80E5 /* helloworld-ios-app-Info.plist */; };
 		4845C3851C4957A4002F80E5 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4845C3841C4957A4002F80E5 /* fhconfig.plist */; };
 		48ED7C591C031A02000A368F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48ED7C581C031A02000A368F /* Storyboard.storyboard */; };
-		48ED7C5B1C031A3D000A368F /* FH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C5A1C031A3D000A368F /* FH.framework */; };
 		48ED7C5D1C031AD2000A368F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C5C1C031AD2000A368F /* libxml2.tbd */; };
 		48ED7C5F1C031AD8000A368F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C5E1C031AD8000A368F /* libz.tbd */; };
 		48ED7C611C031C3C000A368F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C601C031C3C000A368F /* CFNetwork.framework */; };
@@ -33,7 +32,6 @@
 		4845C3841C4957A4002F80E5 /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = fhconfig.plist; path = "helloworld-ios-app/fhconfig.plist"; sourceTree = SOURCE_ROOT; };
 		48ED7C371C03192D000A368F /* helloworld-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "helloworld-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48ED7C581C031A02000A368F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
-		48ED7C5A1C031A3D000A368F /* FH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FH.framework; sourceTree = SOURCE_ROOT; };
 		48ED7C5C1C031AD2000A368F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		48ED7C5E1C031AD8000A368F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		48ED7C601C031C3C000A368F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -58,7 +56,6 @@
 				48ED7C611C031C3C000A368F /* CFNetwork.framework in Frameworks */,
 				48ED7C5F1C031AD8000A368F /* libz.tbd in Frameworks */,
 				48ED7C5D1C031AD2000A368F /* libxml2.tbd in Frameworks */,
-				48ED7C5B1C031A3D000A368F /* FH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +103,6 @@
 				48ED7C641C031CAC000A368F /* MobileCoreServices.framework */,
 				48ED7C621C031CA5000A368F /* SystemConfiguration.framework */,
 				48ED7C601C031C3C000A368F /* CFNetwork.framework */,
-				48ED7C5A1C031A3D000A368F /* FH.framework */,
 				48ED7C5E1C031AD8000A368F /* libz.tbd */,
 				48ED7C5C1C031AD2000A368F /* libxml2.tbd */,
 			);
