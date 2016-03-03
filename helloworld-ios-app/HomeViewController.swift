@@ -15,7 +15,7 @@
 */
 
 import UIKit
-import FH
+import FeedHenry
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
@@ -27,38 +27,36 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         // Initialized cloud connection
-        let successCallback:(AnyObject!) -> Void = {response in
+        FH.init {
+            (resp: Response, error: NSError?) -> Void in
+            if let _ = error {
+                print("FH init failed. Error = \(resp.rawResponseAsString)")
+                self.result.text = "Please fill in fhconfig.plist file."
+            }
             print("initialized OK")
             self.button.hidden = false
         }
-        let errorCallback: (AnyObject!) -> Void = {response in
-            if let response = response as? FHResponse {
-                print("FH init failed. Error = \(response.rawResponseAsString)")
-                self.result.text = "Please fill in fhconfig.plist file."
-            }
-        }
-        FH.initWithSuccess(successCallback, andFailure: errorCallback)
     }
     
     
     @IBAction func cloudCall(sender: AnyObject) {
-        name.endEditing(true)
-        
-        let args = ["hello": name.text ?? "world"]
-        let successCallback:(AnyObject!) -> Void = {response in
-            if let response = response as? FHResponse {
-                if let parsedRes = response.parsedResponse as? [String:String] {
-                    self.result.text = parsedRes["msg"]
-                }
-            }
-        }
-        let errorCallback: (AnyObject!) -> Void = {response in
-            if let response = response as? FHResponse {
-                print("initialize fail, \(response.rawResponseAsString)")
-                self.button.hidden = true
-            }
-        }
-        FH.performCloudRequest("hello", withMethod: "POST", andHeaders: nil, andArgs: args, andSuccess: successCallback, andFailure: errorCallback)
+//        name.endEditing(true)
+//
+//        let args = ["hello": name.text ?? "world"]
+//        let successCallback:(AnyObject!) -> Void = {response in
+//            if let response = response as? FHResponse {
+//                if let parsedRes = response.parsedResponse as? [String:String] {
+//                    self.result.text = parsedRes["msg"]
+//                }
+//            }
+//        }
+//        let errorCallback: (AnyObject!) -> Void = {response in
+//            if let response = response as? FHResponse {
+//                print("initialize fail, \(response.rawResponseAsString)")
+//                self.button.hidden = true
+//            }
+//        }
+//        FH.performCloudRequest("hello", withMethod: "POST", andHeaders: nil, andArgs: args, andSuccess: successCallback, andFailure: errorCallback)
     }
     
     // Mark - Dismiss keyboard
