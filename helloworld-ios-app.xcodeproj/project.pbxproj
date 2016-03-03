@@ -10,22 +10,16 @@
 		4845C37D1C495763002F80E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4845C37C1C495763002F80E5 /* AppDelegate.swift */; };
 		4845C37F1C49576A002F80E5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4845C37E1C49576A002F80E5 /* HomeViewController.swift */; };
 		4845C3811C495774002F80E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4845C3801C495774002F80E5 /* Images.xcassets */; };
-		4845C3831C49579D002F80E5 /* helloworld-ios-app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4845C3821C49579D002F80E5 /* helloworld-ios-app-Info.plist */; };
 		4845C3851C4957A4002F80E5 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4845C3841C4957A4002F80E5 /* fhconfig.plist */; };
 		48ED7C591C031A02000A368F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48ED7C581C031A02000A368F /* Storyboard.storyboard */; };
-		48ED7C5B1C031A3D000A368F /* FH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C5A1C031A3D000A368F /* FH.framework */; };
 		48ED7C5D1C031AD2000A368F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C5C1C031AD2000A368F /* libxml2.tbd */; };
 		48ED7C5F1C031AD8000A368F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C5E1C031AD8000A368F /* libz.tbd */; };
-		48ED7C611C031C3C000A368F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C601C031C3C000A368F /* CFNetwork.framework */; };
-		48ED7C631C031CA5000A368F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C621C031CA5000A368F /* SystemConfiguration.framework */; };
-		48ED7C651C031CAC000A368F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C641C031CAC000A368F /* MobileCoreServices.framework */; };
-		48ED7C671C031CB8000A368F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C661C031CB8000A368F /* CoreGraphics.framework */; };
-		48ED7C691C031CC0000A368F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C681C031CC0000A368F /* UIKit.framework */; };
-		48ED7C6B1C031CCB000A368F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C6A1C031CCB000A368F /* Foundation.framework */; };
 		48ED7C6F1C031F01000A368F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48ED7C6E1C031F01000A368F /* LaunchScreen.storyboard */; };
+		EFD72862E15513B4F5617CA1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9531BB79504855123D25C1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27AE9E2B8DFD0F63B87B1F71 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4845C37C1C495763002F80E5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "helloworld-ios-app/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		4845C37E1C49576A002F80E5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "helloworld-ios-app/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		4845C3801C495774002F80E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "helloworld-ios-app/Images.xcassets"; sourceTree = SOURCE_ROOT; };
@@ -33,16 +27,11 @@
 		4845C3841C4957A4002F80E5 /* fhconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = fhconfig.plist; path = "helloworld-ios-app/fhconfig.plist"; sourceTree = SOURCE_ROOT; };
 		48ED7C371C03192D000A368F /* helloworld-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "helloworld-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48ED7C581C031A02000A368F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
-		48ED7C5A1C031A3D000A368F /* FH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FH.framework; sourceTree = SOURCE_ROOT; };
 		48ED7C5C1C031AD2000A368F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		48ED7C5E1C031AD8000A368F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		48ED7C601C031C3C000A368F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		48ED7C621C031CA5000A368F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		48ED7C641C031CAC000A368F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		48ED7C661C031CB8000A368F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		48ED7C681C031CC0000A368F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		48ED7C6A1C031CCB000A368F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48ED7C6E1C031F01000A368F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		DCFC23E1110BD0CAE9238160 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DD9531BB79504855123D25C1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,15 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48ED7C6B1C031CCB000A368F /* Foundation.framework in Frameworks */,
-				48ED7C691C031CC0000A368F /* UIKit.framework in Frameworks */,
-				48ED7C671C031CB8000A368F /* CoreGraphics.framework in Frameworks */,
-				48ED7C651C031CAC000A368F /* MobileCoreServices.framework in Frameworks */,
-				48ED7C631C031CA5000A368F /* SystemConfiguration.framework in Frameworks */,
-				48ED7C611C031C3C000A368F /* CFNetwork.framework in Frameworks */,
 				48ED7C5F1C031AD8000A368F /* libz.tbd in Frameworks */,
 				48ED7C5D1C031AD2000A368F /* libxml2.tbd in Frameworks */,
-				48ED7C5B1C031A3D000A368F /* FH.framework in Frameworks */,
+				EFD72862E15513B4F5617CA1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +54,7 @@
 				48ED7C391C03192D000A368F /* helloworld-ios-app */,
 				48ED7C701C0322CE000A368F /* Frameworks */,
 				48ED7C381C03192D000A368F /* Products */,
+				CBC81AEAE724CE0FF1E66582 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,17 +84,20 @@
 		48ED7C701C0322CE000A368F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48ED7C6A1C031CCB000A368F /* Foundation.framework */,
-				48ED7C681C031CC0000A368F /* UIKit.framework */,
-				48ED7C661C031CB8000A368F /* CoreGraphics.framework */,
-				48ED7C641C031CAC000A368F /* MobileCoreServices.framework */,
-				48ED7C621C031CA5000A368F /* SystemConfiguration.framework */,
-				48ED7C601C031C3C000A368F /* CFNetwork.framework */,
-				48ED7C5A1C031A3D000A368F /* FH.framework */,
 				48ED7C5E1C031AD8000A368F /* libz.tbd */,
 				48ED7C5C1C031AD2000A368F /* libxml2.tbd */,
+				DD9531BB79504855123D25C1 /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBC81AEAE724CE0FF1E66582 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27AE9E2B8DFD0F63B87B1F71 /* Pods.debug.xcconfig */,
+				DCFC23E1110BD0CAE9238160 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48ED7C491C03192D000A368F /* Build configuration list for PBXNativeTarget "helloworld-ios-app" */;
 			buildPhases = (
+				25E5DFA2D920F304D00D5962 /* Check Pods Manifest.lock */,
 				48ED7C331C03192D000A368F /* Sources */,
 				48ED7C341C03192D000A368F /* Frameworks */,
 				48ED7C351C03192D000A368F /* Resources */,
+				9C65209190CC7F54A9A785A1 /* Embed Pods Frameworks */,
+				F16E58BBCD3BB35D36B305AC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,12 +164,59 @@
 				48ED7C6F1C031F01000A368F /* LaunchScreen.storyboard in Resources */,
 				4845C3851C4957A4002F80E5 /* fhconfig.plist in Resources */,
 				4845C3811C495774002F80E5 /* Images.xcassets in Resources */,
-				4845C3831C49579D002F80E5 /* helloworld-ios-app-Info.plist in Resources */,
 				48ED7C591C031A02000A368F /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25E5DFA2D920F304D00D5962 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C65209190CC7F54A9A785A1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F16E58BBCD3BB35D36B305AC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48ED7C331C03192D000A368F /* Sources */ = {
@@ -279,6 +316,7 @@
 		};
 		48ED7C4A1C03192D000A368F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27AE9E2B8DFD0F63B87B1F71 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -286,9 +324,9 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/helloworld-ios-app/helloworld-ios-app-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.feedhenry.Helloworld-app-iOS";
 				PRODUCT_NAME = "helloworld-ios-app";
 			};
@@ -296,6 +334,7 @@
 		};
 		48ED7C4B1C03192D000A368F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCFC23E1110BD0CAE9238160 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -303,9 +342,9 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/helloworld-ios-app/helloworld-ios-app-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.feedhenry.Helloworld-app-iOS";
 				PRODUCT_NAME = "helloworld-ios-app";
 			};
