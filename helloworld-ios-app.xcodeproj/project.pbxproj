@@ -352,7 +352,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/helloworld-ios-app/helloworld-ios-app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.feedhenry.Helloworld-app-iOS";
 				PRODUCT_NAME = "helloworld-ios-app";
 			};
@@ -370,7 +370,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/helloworld-ios-app/helloworld-ios-app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.feedhenry.Helloworld-app-iOS";
 				PRODUCT_NAME = "helloworld-ios-app";
 			};
