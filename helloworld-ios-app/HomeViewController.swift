@@ -27,10 +27,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Initialized cloud connection
-        FH.init {
-            (resp: Response, error: NSError?) -> Void in
-            if let _ = error {
-                print("FH init failed. Error = \(resp.rawResponseAsString)")
+        FH.init {(resp: Response, error: NSError?) -> Void in
+            if let error = error {
+                print("FH init failed. Error = \(error)")
                 self.result.text = "Please fill in fhconfig.plist file."
             }
             print("initialized OK")
@@ -44,9 +43,9 @@ class HomeViewController: UIViewController {
 
         let args = ["hello": name.text ?? "world"]
 
-        FH.cloud("hello", method: HTTPMethod.POST, args: args, headers: nil, completionHandler:
-        {
-            (resp: Response, error: NSError?) -> Void in
+        FH.cloud("hello", method: HTTPMethod.POST,
+            args: args, headers: nil,
+            completionHandler: {(resp: Response, error: NSError?) -> Void in
             if let _ = error {
                 print("initialize fail, \(resp.rawResponseAsString)")
                 self.button.hidden = true
