@@ -10,7 +10,6 @@
 		4845C37D1C495763002F80E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4845C37C1C495763002F80E5 /* AppDelegate.swift */; };
 		4845C37F1C49576A002F80E5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4845C37E1C49576A002F80E5 /* HomeViewController.swift */; };
 		4845C3811C495774002F80E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4845C3801C495774002F80E5 /* Images.xcassets */; };
-		4845C3831C49579D002F80E5 /* helloworld-ios-app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4845C3821C49579D002F80E5 /* helloworld-ios-app-Info.plist */; };
 		4845C3851C4957A4002F80E5 /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4845C3841C4957A4002F80E5 /* fhconfig.plist */; };
 		48ED7C591C031A02000A368F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48ED7C581C031A02000A368F /* Storyboard.storyboard */; };
 		48ED7C5D1C031AD2000A368F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED7C5C1C031AD2000A368F /* libxml2.tbd */; };
@@ -165,7 +164,6 @@
 				48ED7C6F1C031F01000A368F /* LaunchScreen.storyboard in Resources */,
 				4845C3851C4957A4002F80E5 /* fhconfig.plist in Resources */,
 				4845C3811C495774002F80E5 /* Images.xcassets in Resources */,
-				4845C3831C49579D002F80E5 /* helloworld-ios-app-Info.plist in Resources */,
 				48ED7C591C031A02000A368F /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
