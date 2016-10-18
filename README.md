@@ -1,6 +1,6 @@
 # helloworld-ios-app [![Build Status](https://travis-ci.org/feedhenry-templates/helloworld-ios.png)](https://travis-ci.org/feedhenry-templates/helloword-ios)
 
-> Swift version of HelloWorld app is available [here](https://github.com/feedhenry-templates/helloworld-ios/tree/swift).
+> Swift version is available [here](https://github.com/feedhenry-templates/helloworld-ios-swift).
 
 Author: Corinne Krych   
 Level: Intermediate  
@@ -25,25 +25,23 @@ If you do not have access to a RHMAP instance, you can sign up for a free instan
 This application and its cloud services are available as a project template in RHMAP as part of the "Native iOS Hello World Project" template.
 
 ### Local Clone (ideal for Open Source Development)
+
 If you wish to contribute to this template, the following information may be helpful; otherwise, RHMAP and its build facilities are the preferred solution.
 
 ## Build instructions
 
 1. Clone this project
-
-2. Populate ```iOS-Template-App/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
-
-3. Run ```pod install``` 
-
-4. Open Helloworld-app-iOS.xcworkspace
-
-5. Run the project
+1. Populate ```iOS-Template-App/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
+1. Run ```pod install``` 
+1. Open Helloworld-app-iOS.xcworkspace
+1. Run the project
  
 ## How does it work?
 
 ### Init
 
 In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
+
 ```
 - (void)viewDidLoad {  
     // Initialized cloud connection
@@ -55,15 +53,15 @@ In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
 }
 
 ```
-[1] Initialize the cloud connection.
 
-[2] On successfull callback, you are ready to do other calls.
-
-[3] Log an eror.
+[1] Initialize the cloud connection.   
+[2] On successfull callback, you are ready to do other calls.   
+[3] Log an eror.   
 
 ### Cloud call
 
 In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
+
 ```
 - (IBAction)cloudCall:(id)sender {
     NSDictionary *args = [NSDictionary dictionaryWithObject:name.text forKey:@"hello"];
@@ -75,9 +73,9 @@ In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
     }];
 }
 ```
-[1] Create a cloud request specifying endpoint and its arguments.
 
-[2] Make asynchronous call with its success and error callbacks.
+[1] Create a cloud request specifying endpoint and its arguments.   
+[2] Make asynchronous call with its success and error callbacks.   
 
 ### iOS9 and non TLS1.2 backend
 
