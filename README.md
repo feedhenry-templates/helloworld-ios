@@ -10,7 +10,7 @@ Community Project : [Feed Henry](http://feedhenry.org)
 Target Product: RHMAP  
 Product Versions: RHMAP 3.7.0+   
 Source: https://github.com/feedhenry-templates/helloworld-ios  
-Prerequisites: fh-ios-sdk : 3.+, Xcode : 7.2+, iOS SDK : iOS7+, CocoaPods  1.0.1+
+Prerequisites: fh-ios-sdk : 3.+, Xcode : 8+, iOS SDK : iOS8+, CocoaPods  1.0.1+
 
 ## What is it?
 
@@ -31,16 +31,16 @@ If you wish to contribute to this template, the following information may be hel
 ## Build instructions
 
 1. Clone this project
-1. Populate ```iOS-Template-App/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
+1. Populate ```helloworld-ios-app/fhconfig.plist``` with your values as explained [on section 2.1.4. Setup](https://access.redhat.com/documentation/en/red-hat-mobile-application-platform-hosted/3/paged/client-sdk/chapter-2-native-ios-objective-c).
 1. Run ```pod install``` 
-1. Open Helloworld-app-iOS.xcworkspace
+1. Open helloworld-ios-app.xcworkspace
 1. Run the project
  
 ## How does it work?
 
 ### Init
 
-In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
+In ```helloworld-ios-app/HomeViewController.m``` the FH.init call is done:
 
 ```
 - (void)viewDidLoad {  
@@ -60,7 +60,7 @@ In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
 
 ### Cloud call
 
-In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
+In ```helloworld-ios-app/HomeViewController.m``` the FH.init call is done:
 
 ```
 - (IBAction)cloudCall:(id)sender {
@@ -79,7 +79,7 @@ In ```iOS-Template-App/HomeViewController.m``` the FH.init call is done:
 
 ### iOS9 and non TLS1.2 backend
 
-If your RHMAP is depoyed without TLS1.2 support, open as source  ```blank-ios-app/blank-ios-app-Info.plist.plist``` uncomment the exception lines:
+If your RHMAP is depoyed without TLS1.2 support, open as source  ```helloworld-ios-app/helloworld-ios-app-Info.plist``` uncomment the exception lines:
 
 ```
   <!--
