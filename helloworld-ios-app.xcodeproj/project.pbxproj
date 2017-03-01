@@ -13,6 +13,7 @@
 		48321E6C1C49507C0061A8FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48321E6B1C49507C0061A8FB /* Images.xcassets */; };
 		48321E6E1C4950890061A8FB /* fhconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48321E6D1C4950890061A8FB /* fhconfig.plist */; };
 		48321E721C4950A00061A8FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48321E711C4950A00061A8FB /* main.m */; };
+		8818ACF51E6443A80016B0DD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8818ACF41E6443A80016B0DD /* Launch Screen.storyboard */; };
 		AD5D7E500D3C1D5215B46B21 /* libPods-helloworld-ios-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEC0604C6927859A5DDA60D /* libPods-helloworld-ios-app.a */; };
 		F2E35ECF190A960F00F08BC6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35ECE190A960F00F08BC6 /* libz.dylib */; };
 		F2E35EDB190A9B3400F08BC6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E35EDA190A9B3400F08BC6 /* libxml2.dylib */; };
@@ -30,6 +31,7 @@
 		48321E6F1C4950980061A8FB /* helloworld-ios-app-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "helloworld-ios-app-Info.plist"; path = "helloworld-ios-app/helloworld-ios-app-Info.plist"; sourceTree = SOURCE_ROOT; };
 		48321E711C4950A00061A8FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "helloworld-ios-app/main.m"; sourceTree = SOURCE_ROOT; };
 		48321E731C4950A70061A8FB /* helloworld-ios-app-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "helloworld-ios-app-Prefix.pch"; path = "helloworld-ios-app/helloworld-ios-app-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		8818ACF41E6443A80016B0DD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 		8A752CB58B24942AC2578F50 /* Pods-helloworld-ios-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloworld-ios-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-helloworld-ios-app/Pods-helloworld-ios-app.release.xcconfig"; sourceTree = "<group>"; };
 		E8C626CA5F9BD7057C84B57E /* Pods-helloworld-ios-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloworld-ios-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-helloworld-ios-app/Pods-helloworld-ios-app.debug.xcconfig"; sourceTree = "<group>"; };
 		F2E35E90190A8BB800F08BC6 /* helloworld-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "helloworld-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 				48321E681C4950610061A8FB /* AppDelegate.h */,
 				48321E691C4950610061A8FB /* AppDelegate.m */,
 				F2E35E9A190A8BB800F08BC6 /* Supporting Files */,
+				8818ACF41E6443A80016B0DD /* Launch Screen.storyboard */,
 			);
 			name = "helloworld-ios-app";
 			path = "iOS-Template-App";
@@ -185,6 +188,7 @@
 			files = (
 				48321E6E1C4950890061A8FB /* fhconfig.plist in Resources */,
 				48321E6C1C49507C0061A8FB /* Images.xcassets in Resources */,
+				8818ACF51E6443A80016B0DD /* Launch Screen.storyboard in Resources */,
 				48321E671C4950510061A8FB /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +350,6 @@
 			baseConfigurationReference = E8C626CA5F9BD7057C84B57E /* Pods-helloworld-ios-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -371,7 +374,6 @@
 			baseConfigurationReference = 8A752CB58B24942AC2578F50 /* Pods-helloworld-ios-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
