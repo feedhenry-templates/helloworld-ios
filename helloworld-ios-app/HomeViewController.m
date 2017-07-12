@@ -27,15 +27,18 @@
 - (void)viewDidLoad {
     result.contentInset = UIEdgeInsetsMake(20.0, 20.0, 10.0, 10.0);
     [super viewDidLoad];
-    
+    button.hidden = YES;
     // Initialized cloud connection
     [FH initWithSuccess:^(FHResponse *response) {
         NSLog(@"initialized OK");
         button.hidden = NO;
     } AndFailure:^(FHResponse *response) {
         NSLog(@"initialize fail, %@", response.rawResponseAsString);
-        button.hidden = YES;
-        result.text = @"Please fill in fhconfig.plist file.";
+        if (response.parsedResponse) {
+            result.text = [NSString stringWithFormat:@"init failed, %@",[response.parsedResponse objectForKey:@"msg"]];
+        } else {
+            result.text = @"Please fill in fhconfig.plist file.";
+        }
     }];
 }
 
