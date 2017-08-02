@@ -11,7 +11,7 @@ BUILD_CONFIG = params?.BUILD_CONFIG?.trim()                                // e.
 //CODE_SIGN_PROFILE_ID = "redhat-dist-dp"
 //BUILD_CONFIG = "Debug"
 
-// sample values commented below are for https://github.com/feedhenry-templates/helloworld-ios-swift
+// sample values commented below are for https://github.com/feedhenry-templates/helloworld-ios
 /* ------------- use these to hardcode things in Jenkinsfile ---------------- */
 PROJECT_NAME = "helloworld-ios-app"
 INFO_PLIST = "helloworld-ios-app/helloworld-ios-app-Info.plist"
