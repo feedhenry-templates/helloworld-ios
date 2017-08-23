@@ -11,7 +11,7 @@ Community Project : [Feed Henry](http://feedhenry.org)
 Target Product: RHMAP  
 Product Versions: RHMAP 3.7.0+   
 Source: https://github.com/feedhenry-templates/helloworld-ios  
-Prerequisites: fh-ios-sdk: 3.+, Xcode: 9+, iOS SDK: iOS9+, CocoaPods 1.3.0+
+Prerequisites: fh-ios-sdk: 4.+, Xcode: 9+, iOS SDK: iOS9+, CocoaPods 1.3.0+
 
 ## What is it?
 
