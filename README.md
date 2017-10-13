@@ -1,17 +1,18 @@
 # helloworld-ios-app
-[![Build Status](https://travis-ci.org/feedhenry-templates/helloworld-ios.png)](https://travis-ci.org/feedhenry-templates/helloword-ios)
+
+[![circle-ci](https://img.shields.io/circleci/project/github/feedhenry-templates/helloworld-ios/master.svg)](https://circleci.com/gh/feedhenry-templates/helloworld-ios)
 
 > Swift version is available [here](https://github.com/feedhenry-templates/helloworld-ios-swift).
 
 Author: Corinne Krych   
-Level: Intermediate  
-Technologies: Objective-C, iOS, RHMAP, CocoaPods.
-Summary: A demonstration of how to get started with remote cloud call in RHMAP.
-Community Project : [Feed Henry](http://feedhenry.org)
-Target Product: RHMAP  
+Level: Intermediate   
+Technologies: Objective-C, iOS, RHMAP, CocoaPods.   
+Summary: A demonstration of how to get started with remote cloud call in RHMAP.   
+Community Project: [Feed Henry](http://feedhenry.org)   
+Target Product: RHMAP   
 Product Versions: RHMAP 3.7.0+   
-Source: https://github.com/feedhenry-templates/helloworld-ios  
-Prerequisites: fh-ios-sdk : 3.+, Xcode : 8+, iOS SDK : iOS8+, CocoaPods  1.0.1+
+Source: https://github.com/feedhenry-templates/helloworld-ios   
+Prerequisites: fh-ios-sdk: 5.+, Xcode: 9+, iOS SDK: iOS9+, CocoaPods 1.3.0+   
 
 ## What is it?
 
