@@ -1,5 +1,6 @@
 # helloworld-ios-app
-[![Build Status](https://travis-ci.org/feedhenry-templates/helloworld-ios.png)](https://travis-ci.org/feedhenry-templates/helloword-ios)
+
+[![circle-ci](https://img.shields.io/circleci/project/github/feedhenry-templates/helloworld-ios/master.svg)](https://circleci.com/gh/feedhenry-templates/helloworld-ios)
 
 > Swift version is available [here](https://github.com/feedhenry-templates/helloworld-ios-swift).
 
