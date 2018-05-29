@@ -69,7 +69,9 @@ node('ios') {
     }
 
     stage('Prepare') {
-        writeFile file: "${PROJECT_NAME}/fhconfig.plist", text: FH_CONFIG_CONTENT
+        if(params.FH_CONFIG_CONTENT) {
+            writeFile file: "${PROJECT_NAME}/fhconfig.plist", text: FH_CONFIG_CONTENT
+        }
         sh '/usr/local/bin/pod install'
     }
 
